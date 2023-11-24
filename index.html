@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Atendimento</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="section">
+        <div class="lastPassword">
+            <div class="logo">
+                <img src="./imagem/Logo.jpg" alt="Desenho de 3 balas">
+                <h1>Clínica <br>Lobianco</h1>
+            </div>
+            <div class="containerLastPassword">
+                <h2>Últimas Senhas</h2>
+                <div class="previousPasswords">
+                    <div class="recentPassword">
+                        <h3>Senha</h3>
+                        <span id="ultimaSenha1"></span>
+                    </div>
+                    <div class="recentPassword">
+                        <h3>Senha</h3>
+                        <span id="ultimaSenha2"></span>
+                    </div>
+                    <div class="recentPassword">
+                        <h3>Senha</h3>
+                        <span id="ultimaSenha3"></span>
+                    </div>
+                    <div class="recentPassword">
+                        <h3>Senha</h3>
+                        <span id="ultimaSenha4"></span>
+                    </div>
+                </div>
+                <div class="entradaSenhas">
+                    <div class="comum">
+                        <h3>Senha Comum</h3>
+                        <button class="btguiche" onclick="clickComumG1()">G1</button>
+                        <button class="btguiche" onclick="clickComumG2()">G2</button>
+                        <button class="btguiche" onclick="clickComumG3()">G3</button>
+                    </div>
+                    <div class="preferencial">
+                        <h3>Senha Preferêncial</h3>
+                        <button class="btguiche" onclick="clickPrefG1()">G1</button>
+                        <button class="btguiche" onclick="clickPrefG2()">G2</button>
+                        <button class="btguiche" onclick="clickPrefG3()">G3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newPassword">
+            <div class="containerNewPassword">
+                <div class="senha">
+                    <h2>Senha</h2>
+                    <span id="novaSenha"></span>
+                </div>
+                <div class="box">
+                    <h2>Guichê</h2>
+                    <span id="boxAtendimento"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Adicione cada vídeo como um item do carrossel -->
+                                <video width="100%" autoplay>
+                                    <source src="./videos/video1.mp4" type="video/mp4">
+                                </video>
+                                <video width="100%" controls autoplay>
+                                    <source src="./videos/video2.mp4" type="video/mp4">
+                                </video>
+                                <video width="100%" controls autoplay>
+                                    <source src="./videos/video3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

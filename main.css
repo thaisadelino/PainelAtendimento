@@ -1,0 +1,148 @@
+.section{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    max-height: 680px;
+}
+
+.lastPassword{
+    width: 40%;
+    margin: 10px, auto;
+    align-items: center;
+    margin: 0 auto;
+    justify-self: center;
+}
+.logo{
+    width: 100%;
+    height: 25%;
+    display: inline-flex;
+    margin: 0 auto;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo h1{
+    color: rgb(103, 189, 185);
+    height: 60%;
+    margin: auto;
+    padding: 15% 0;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo img{
+    height: 60%;
+    margin-left: 10%;
+}
+
+.containerLastPassword{
+    height: 80%;
+    display: block;
+    justify-content: center;
+    margin: 10px;
+}
+.containerLastPassword h2,
+.entradaSenhas h3{
+    background-color: rgb(103, 189, 185);
+    height: 8%;
+    border: rgb(103, 189, 185) groove;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.previousPassword{
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+}
+
+.recentPassword h3{
+    color: rgb(103, 189, 185);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: rgb(103, 189, 185) solid;;
+}
+
+.recentPassword{
+    height: 80px;
+    width: 42%;
+    display: inline-block;
+    margin: 1%;
+    border: rgb(103, 189, 185) groove;
+    color: rgb(103, 189, 185);
+    border-radius: 20px;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+.recentPassword p{
+    text-align: center;
+    font-size: 100%;
+}
+
+.newPassword{
+    width: 60%;
+    background-color: rgb(103, 189, 185);
+}
+.containerNewPassword{
+    display: flex;
+    
+    height: 25%;
+}
+.senha, .box{    
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+.senha h2, .box h2{
+    margin: 10px;
+    color: rgb(103, 189, 185);
+    border: white groove;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.entradaSenhas button{
+    background-color: white;
+    width: 30%;
+    font-size: 110%;
+    border: white groove;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    /*align-items: center;*/
+    color: rgb(103, 189, 185);
+    margin: 1%;
+    columns: 1;
+}
+
+.entradaSenhas{
+    margin: 10% 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.comum, .preferencial{
+    width: 50vw;
+}
+
+.senha span, .box span{
+    font-size: 500%;
+}
+
+.recentPassword span{
+    color: rgb(103, 189, 185);
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
