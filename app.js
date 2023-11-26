@@ -70,5 +70,27 @@ function clickPrefG3(){
     atualizarSenha();
 }
 
+const slides = document.querySelector("[data-slides]");
+const videos = document.querySelectorAll("video");
 
+videos.forEach(v => {
+    v.addEventListener("ended", () => {
+        CarouselNext();
+        v.play();
+    },false);
+});
 
+function CarouselNext(){
+    const activeSlide = slides.querySelector("[data-active]");
+    let activeIndex = [...slides.children].indexOf(activeSlide);
+    let newIndex = activeIndex;
+    
+    if(activeIndex >= slides.children.length - 1){
+        newIndex = 0;
+    }else{
+        newIndex ++;
+    }
+
+    slides.children[newIndex].dataset.active = true;
+    delete activeSlide.dataset.active
+}

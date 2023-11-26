@@ -63,19 +63,21 @@
             <div class="col-md-4">
                 <div class="card mt-3">
                     <div class="card-body">
-                        <div id="videoCarousel" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
+                        <div id="videoCarousel" class="carousel" data-ride="carousel">
+                            <!-- <button class="crousel-btn prev">&#8249;</button>
+                            <button class="crousel-btn next">&#8250;</button> -->
+                            <ul data-slides>
                                 <!-- Adicione cada vídeo como um item do carrossel -->
-                                <video width="100%" autoplay>
+                                <li class="slide" data-active><video width="100%" autoplay>
                                     <source src="./videos/video1.mp4" type="video/mp4">
-                                </video>
-                                <video width="100%" controls autoplay>
+                                </video></li>
+                                <li class="slide"><video width="100%" autoplay>
                                     <source src="./videos/video2.mp4" type="video/mp4">
-                                </video>
-                                <video width="100%" controls autoplay>
+                                </video></li>
+                                <li class="slide"><video width="100%" autoplay>
                                     <source src="./videos/video3.mp4" type="video/mp4">
-                                </video>
-                            </div>
+                                </video></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
