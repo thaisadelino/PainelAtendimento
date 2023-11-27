@@ -75,8 +75,8 @@ const videos = document.querySelectorAll("video");
 
 videos.forEach(v => {
     v.addEventListener("ended", () => {
-        CarouselNext();
         v.play();
+        CarouselNext();
     },false);
 });
 
@@ -90,7 +90,8 @@ function CarouselNext(){
     }else{
         newIndex ++;
     }
-
+    
+    console.log(newIndex);
     slides.children[newIndex].dataset.active = true;
     delete activeSlide.dataset.active
 }
