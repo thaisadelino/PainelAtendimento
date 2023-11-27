@@ -74,6 +74,7 @@ const slides = document.querySelector("[data-slides]");
 const videos = document.querySelectorAll("video");
 
 videos.forEach(v => {
+    v.play();
     v.addEventListener("ended", () => {
         v.play();
         CarouselNext();
